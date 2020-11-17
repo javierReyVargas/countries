@@ -17,7 +17,6 @@ export class CountryDetailComponent implements OnInit {
   public open(data: object) {
     this.dataCountry = data;
     this.modal.nativeElement.style.display = 'flex';
-    console.log(this.dataCountry);
   }
 
   public close(){

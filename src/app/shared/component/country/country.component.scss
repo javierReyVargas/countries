@@ -1,0 +1,18 @@
+.country-list-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4px;
+  cursor: pointer;
+
+  &__img {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__name {
+    font-size: 14px;
+    padding-left: 4px;
+    margin-bottom: 0;
+    color: gray;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="list-region-container">
+  <div class="list-region-container__title">
+    <span>
+      {{region['name']}}
+    </span>
+  </div>
+
+  <div class="list-region-container__countries">
+    <ul>
+      <li *ngFor="let country of region['countries'] | filterByText:textSearched">
+        <shared-country [countryData]="country"></shared-country>
+      </li>
+    </ul>
+  </div>
+</div>
+
+

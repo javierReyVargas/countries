@@ -1,0 +1,7 @@
+<shared-country-detail #modal></shared-country-detail>
+<div class="country-list-container" (click)="openDetail(countryData)">
+  <img class="country-list-container__img"
+       [src]="countryData['flag']"
+       alt="colombia">
+  <p class="country-list-container__name">{{countryData['name']}}</p>
+</div>

@@ -1,0 +1,71 @@
+.containerModalDetail {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  & .country-detail {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    width: 60%;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    justify-content: space-around;
+    border-radius: 6px;
+    padding: 18px 18px;
+
+    &--icon-close {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      & svg {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+
+    &--img {
+      align-self: center;
+      & > img {
+        width: 200px;
+        height: 110px;
+      }
+    }
+
+    &-text {
+      &__header {
+        display: flex;
+        &--title {
+          font-size: 30px;
+          max-width: 370px;
+        }
+
+        & > svg {
+          width: 25px;
+          height: 21px;
+          align-self: center;
+          margin-left: 10px;
+          cursor: pointer;
+          fill: white;
+          stroke: black;
+          stroke-width: 1px;
+
+          &.favorite {
+            fill: gold;
+          }
+        }
+      }
+    }
+  }
+}
+
